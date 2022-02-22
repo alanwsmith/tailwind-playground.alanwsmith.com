@@ -1,4 +1,5 @@
 import HeadTag from '../components/HeadTag'
+import Link from 'next/link'
 
 export default function HomePage() {
   return (
@@ -14,7 +15,7 @@ export default function HomePage() {
         <h1 className="text-3xl font-bold pb-1 mb-6 border-b border-gray-600">
           Tailwind Playground
         </h1>
-        <ul className="text-lg">
+        <ul className="text-lg list-disc pl-6">
           <li>
             This is my space to toy around with Tailwind to experiment with it
             and see how it works.
@@ -27,6 +28,19 @@ export default function HomePage() {
           <li>
             The header is: `text-3xl font-bold pb-1 mb-6 border-b
             border-gray-600`
+          </li>
+        </ul>
+        <h2 className="text-2xl mt-10">Examples</h2>
+        <ul>
+          <li>
+            <Link href="/max-widths">
+              <a>Max Widths</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/max-widths-centered">
+              <a>Max Widths - Centered</a>
+            </Link>
           </li>
         </ul>
       </main>
