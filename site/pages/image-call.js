@@ -27,22 +27,24 @@ export default function Page() {
         </p>
         <img
           width="640"
-          srcset="
+          srcSet="
         /images/sample-1--640x80.png 640w,
         /images/sample-1--1280x160.png 1280w
           "
           sizes="640px, 1280px"
           src="/images/sample-1--1280x160.png 1280w"
+          alt="A test image with a random fabric pattern that's yellow and blue"
         />
 
         <img
           width="640"
-          srcset="
+          srcSet="
         /images/sample-2--640x80.png 640w,
         /images/sample-2--1280x160.png 1280w
           "
           sizes="640px, 1280px"
           src="/images/sample-2--1280x160.png 1280w"
+          alt="A test image with a random fabric pattern that's red, dark blue, and dark yellow"
         />
 
         <p>
